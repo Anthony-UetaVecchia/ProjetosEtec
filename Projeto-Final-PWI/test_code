@@ -1,0 +1,77 @@
+/* código mais avançado e estamos em dúvida
+
+CSS:
+footer ul {
+	position: relative;
+	display: flex;
+}
+
+footer li {
+	position: relative;
+	justify-content: center;
+	list-style: none;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+footer .github {
+	font-size: 96px;
+	color: #222;
+}
+
+footer li::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 96px;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+
+footer li:nth-child(1)::before {
+	content: url("/img/logoGH.png");
+	background-image: linear-gradient(45deg, #f09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border-bottom: 4px solid #DC2743;
+}
+
+footer li:nth-child(2)::before {
+	content: url(/img/logoGH.png);
+	color: #25D366;
+	border-bottom: 4px solid #25D366;
+}
+
+footer li:nth-child(3)::before {
+	content: url(/img/logoGH.png);
+	color: #1DA1F2;
+	border-bottom: 4px solid #1DA1F2;
+}
+
+footer li:hover::before {
+	height: 100%;
+}
+
+footer img {
+	width: 250px;
+}
+
+HTML:
+<ul id="git">
+    <li>
+        <a href="https://github.com/Anthony-UetaVecchia">
+            <i><img src="/img/logoGH.png"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/fabioantunes2806">
+            <i><img src="/img/logoGH.png"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gabrielrics">
+            <i><img src="/img/logoGH.png"></i>
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testando JS no HTML</title>
+    </head>
+    <body>
+        <button onclick="funcaoSoma()">Clique aqui e Some</button>
+        <button onclick="funcaoSub()">Clique aqui e Subtraia</button>
+        <button onclick="funcaoMulti()">Clique aqui e Multiplique</button>
+        <button onclick="funcaoDivi()">Clique aqui e Divida</button>
+
+        <script>
+            const funcaoSoma = () => {
+                var num1 = Number(prompt("Digite um numero ai meu fi: "))
+                var num2 = Number(prompt("Digite outro numero ai: "))
+                var soma = num1 + num2
+                var resultado = "O resultado é: " + soma
+                alert(resultado)            
+
+            }
+
+
+            const funcaoSub = () => {
+                var num1 = Number(prompt("Digite um numero ai meu fi: "))
+                var num2 = Number(prompt("Digite outro numero ai: "))
+                var sub = num1 - num2
+                var resultado = "O resultado é: " + sub
+                alert(resultado)  
+            }
+
+
+            const funcaoMulti = () => {
+                var num1 = Number(prompt("Digite um numero ai meu fi: "))
+                var num2 = Number(prompt("Digite outro numero ai: "))
+                var multi = num1 * num2
+                var resultado = "O resultado é: " + multi
+                alert(resultado)            
+            }
+
+
+            const funcaoDivi = () => {
+                var num1 = Number(prompt("Digite um numero ai meu fi: "))
+                var num2 = Number(prompt("Digite outro numero ai: "))
+                var divi = num1 / num2
+                var resultado = "O resultado é: " + divi
+                alert(resultado)  
+            }
+        </script>
+    </body>
+</html>

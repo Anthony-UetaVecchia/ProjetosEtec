@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: crimson;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.flex-container-warp-reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: crimson;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.flex-container-nowarp {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: crimson;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: blue;
+  width: 400px;
+  margin: 50px;
+  text-align: right;
+  line-height: 90px;
+  font-size: 50px;
+}
+
+.flex-container-warp-reverse > div {
+  background-color: blueviolet;
+  width: 400px;
+  margin: 50px;
+  text-align: left;
+  line-height: 90px;
+  font-size: 50px;
+}
+
+.flex-container-nowarp > div {
+  background-color: greenyellow;
+  width: 400px;
+  margin: 50px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 50px;
+}
+
+
+
+</style>
+</head>
+<body>
+<h1>Com Wrap</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<h1>Com wrap-reverse</h1>
+<div class="flex-container-warp-reverse">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+
+
+<h1>Com nowrap</h1>
+<div class="flex-container-nowarp">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<p>Tá editado.</p>
+<p>Não há nada importante aqui.</p>
+<p><strong>Note:</strong> Você tá perdendo tempo lendo isso.</p>
+
+</body>
+</html>
